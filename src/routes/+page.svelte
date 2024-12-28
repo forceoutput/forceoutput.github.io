@@ -49,7 +49,11 @@
 		>
 	</h3>
 	<h3>
-		<a href="https://forceoutput.connpass.com/event/339151/" target="_blank">connpassページ</a>
+		<a
+			href="https://forceoutput.connpass.com/event/339151/"
+			class="text-blue-600 underline"
+			target="_blank">connpass</a
+		>
 	</h3>
 	{#await data.blogData}
 		<p>loading...</p>
