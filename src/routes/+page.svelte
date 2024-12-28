@@ -43,6 +43,22 @@
 		{/await}
 		/ 108
 	</h2>
+	{#await count then count}
+		{#if count >= 108}
+			<!-- 久しぶりだね. font タグだよ. 後方互換性に感謝 -->
+			<marquee
+				><font size="3"
+					><font color="#ff0000">煩</font><font color="#ffff00">悩</font><font color="#ffe000"
+						>撃</font
+					><font color="#ffff00">滅</font><font color="#005500"> </font><font color="#00aa54"
+						>煩</font
+					><font color="#00ffff">悩</font><font color="#0001ff">撃</font><font color="#0000ff"
+						>滅</font
+					></font
+				></marquee
+			>
+		{/if}
+	{/await}
 	<h3>
 		<a
 			class="text-[#0000ff] underline"
