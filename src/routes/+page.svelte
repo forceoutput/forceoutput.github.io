@@ -18,6 +18,13 @@
 						target="_blank"
 						rel="noopener noreferrer">{blog.blogTitle}</a
 					>
+					<span>by</span>
+					<a
+						class="text-blue-600 underline"
+						href={blog.profileUrl}
+						target="_blank"
+						rel="noopener noreferrer">{blog.name}</a
+					>
 				</li>
 			{/each}
 		</ul>
