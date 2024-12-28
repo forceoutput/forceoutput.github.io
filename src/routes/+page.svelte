@@ -45,7 +45,7 @@
 	</h2>
 	<h3>
 		<a
-			class="text-blue-600 underline"
+			class="text-[#0000ff] underline"
 			target="_blank"
 			rel="noopener noreferer"
 			href="https://x.com/hashtag/%E5%8A%9B%E5%BC%B7%E3%81%8F%E3%82%A2%E3%82%A6%E3%83%88%E3%83%97%E3%83%83%E3%83%88%E3%81%99%E3%82%8B%E6%97%A5"
@@ -55,13 +55,14 @@
 	<h3>
 		<a
 			href="https://forceoutput.connpass.com/event/339151/"
-			class="text-blue-600 underline"
+			class="text-[#0000ff] underline"
 			target="_blank">connpass</a
 		>
 	</h3>
 	<div>
 		<a
-			class="text-blue-600 underline"
+			color="red"
+			class="text-[#ff0000] underline"
 			target="_blank"
 			href="https://twitter.com/intent/tweet?text=%23%E5%8A%9B%E5%BC%B7%E3%81%8F%E3%82%A2%E3%82%A6%E3%83%88%E3%83%97%E3%83%83%E3%83%88%E3%81%99%E3%82%8B%E6%97%A5%0Ahttps%3A%2F%2Fforceoutput.github.io%2F"
 			>☆☆☆つぶやく☆☆☆</a
@@ -75,14 +76,14 @@
 				<li>
 					<span>No.{blog.id + 1} </span>
 					<a
-						class="text-blue-600 underline"
+						class="text-[#0000ff] underline"
 						href={blog.blogUrl}
 						target="_blank"
 						rel="noopener noreferrer">{blog.blogTitle}</a
 					>
 					<span>by</span>
 					<a
-						class="text-blue-600 underline"
+						class="text-[#0000ff] underline"
 						href={blog.profileUrl}
 						target="_blank"
 						rel="noopener noreferrer">{blog.name}</a
