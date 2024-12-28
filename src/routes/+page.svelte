@@ -59,6 +59,14 @@
 			target="_blank">connpass</a
 		>
 	</h3>
+	<div>
+		<a
+			class="text-blue-600 underline"
+			target="_blank"
+			href="https://twitter.com/intent/tweet?text=%23%E5%8A%9B%E5%BC%B7%E3%81%8F%E3%82%A2%E3%82%A6%E3%83%88%E3%83%97%E3%83%83%E3%83%88%E3%81%99%E3%82%8B%E6%97%A5%0Ahttps%3A%2F%2Fforceoutput.github.io%2F"
+			>☆☆☆つぶやく☆☆☆</a
+		>
+	</div>
 	{#await data.blogData}
 		<p>loading...</p>
 	{:then blogRes}
