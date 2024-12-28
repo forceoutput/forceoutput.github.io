@@ -20,6 +20,10 @@
 </svelte:head>
 
 <main class="md:max-x-[500px] flex max-h-full flex-col items-center justify-center px-5 py-8">
+	<img
+		src="https://media.connpass.com/thumbs/a8/c5/a8c5a75cd0917b3344a86de8c15983e9.png"
+		alt="建物の外側に放置されている複数の椅子が絡み合って、複雑な様子を写した画像"
+	/>
 	<h1>力強くブログを108記事アウトプットする日</h1>
 	<h2>
 		{#await count}
@@ -38,6 +42,7 @@
 			>#力強くブログを108記事アウトプットする日</a
 		>
 	</h3>
+	<h3>connpassページ</h3>
 	{#await data.blogData}
 		<p>loading...</p>
 	{:then blogRes}
