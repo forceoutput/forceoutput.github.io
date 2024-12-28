@@ -15,8 +15,8 @@
 		name="og:image"
 		content="https://media.connpass.com/thumbs/a8/c5/a8c5a75cd0917b3344a86de8c15983e9.png"
 	/>
-	<meta name="twitter:card" content="“summary_large_image" />
-	<meta name="twitter:creator" content="tomio2480" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:creator" content="@tomio2480" />
 </svelte:head>
 
 <main class="md:max-x-[500px] flex max-h-full flex-col items-center justify-center px-5 py-8">
