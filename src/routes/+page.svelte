@@ -44,7 +44,7 @@
 		/ 108
 	</h2>
 	{#await count then count}
-		{#if count >= 0}
+		{#if count >= 108}
 			<!-- 久しぶりだね. font タグだよ. 後方互換性に感謝 -->
 			<marquee
 				><font size="7"
