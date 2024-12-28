@@ -5,6 +5,14 @@
 
 <main class="md:max-x-[500px] flex max-h-full flex-col items-center justify-center px-5 py-8">
 	<h1>力強くブログを108記事アウトプットする日</h1>
+	<h2>
+		{#await data.blogData}
+			<p>...</p>
+		{:then blogRes}
+			<span>{blogRes.data.length + 1}</span>
+		{/await}
+		/ 108
+	</h2>
 	{#await data.blogData}
 		<p>loading...</p>
 	{:then blogRes}
