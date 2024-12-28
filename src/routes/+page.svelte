@@ -25,11 +25,15 @@
 	<meta name="twitter:creator" content="@tomio2480" />
 </svelte:head>
 
-<main class="md:max-x-[500px] flex max-h-full flex-col items-center justify-center px-5 py-8">
+<main class="md:max-x-[500px] flex max-h-full flex-col items-center justify-center gap-1 px-5 py-8">
 	<img
 		src="https://media.connpass.com/thumbs/a8/c5/a8c5a75cd0917b3344a86de8c15983e9.png"
 		alt="建物の外側に放置されている複数の椅子が絡み合って、複雑な様子を写した画像"
 	/>
+	<blockquote>
+		'さもなくばイメージ画像のように「あとはやるだけ」のものが複雑に絡み合って足枷になるぞ'
+		<cite>-- tomio2480</cite>
+	</blockquote>
 	<h1>力強くブログを108記事アウトプットする日</h1>
 	<h2>
 		{#await count}
