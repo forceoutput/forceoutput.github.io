@@ -44,15 +44,35 @@
 		/ 108
 	</h2>
 	{#await count then count}
-		{#if count >= 108}
+		{#if count >= 0}
 			<!-- 久しぶりだね. font タグだよ. 後方互換性に感謝 -->
 			<marquee
-				><font size="3"
-					><font color="#ff0000">煩</font><font color="#ffff00">悩</font><font color="#ffe000"
+				><font size="7"
+					><font color="#ff0000">煩</font><font color="#ff1900">悩</font><font color="#ff3200"
 						>撃</font
-					><font color="#ffff00">滅</font><font color="#005500"> </font><font color="#00aa54"
+					><font color="#ff4b00">滅</font><font color="#ff6400">†</font><font color="#ff7d00"
 						>煩</font
-					><font color="#00ffff">悩</font><font color="#0001ff">撃</font><font color="#0000ff"
+					><font color="#ff9600">悩</font><font color="#ffaf00">撃</font><font color="#ffaa00"
+						>滅</font
+					><font color="#ffb800">†</font><font color="#ffc500">煩</font><font color="#ffd300"
+						>悩</font
+					><font color="#ffe100">撃</font><font color="#ffee00">滅</font><font color="#fffc00"
+						>†</font
+					><font color="#ffff00">煩</font><font color="#e0ef00">悩</font><font color="#b9dc00"
+						>撃</font
+					><font color="#92c900">滅</font><font color="#6cb500">†</font><font color="#45a200"
+						>煩</font
+					><font color="#1e8f00">悩</font><font color="#007c00">撃</font><font color="#008307"
+						>滅</font
+					><font color="#00972e">†</font><font color="#00aa55">煩</font><font color="#00bd7b"
+						>悩</font
+					><font color="#00d0a2">撃</font><font color="#00e4c8">滅</font><font color="#00f7ef"
+						>†</font
+					><font color="#00ffff">煩</font><font color="#00e7ff">悩</font><font color="#00c1ff"
+						>撃</font
+					><font color="#009aff">滅</font><font color="#0073ff">†</font><font color="#004dff"
+						>煩</font
+					><font color="#0026ff">悩</font><font color="#0000ff">撃</font><font color="#0000ff"
 						>滅</font
 					></font
 				></marquee
