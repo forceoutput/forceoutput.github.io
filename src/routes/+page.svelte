@@ -15,6 +15,12 @@
 		name="og:image"
 		content="https://media.connpass.com/thumbs/a8/c5/a8c5a75cd0917b3344a86de8c15983e9.png"
 	/>
+	<meta name="og:title" content="力強くブログを108記事アウトプットする日" />
+	<meta
+		name="twitter:image"
+		content="https://media.connpass.com/thumbs/a8/c5/a8c5a75cd0917b3344a86de8c15983e9.png"
+	/>
+	<meta name="twitter:title" content="力強くブログを108記事アウトプットする日" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:creator" content="@tomio2480" />
 </svelte:head>
@@ -42,7 +48,9 @@
 			>#力強くブログを108記事アウトプットする日</a
 		>
 	</h3>
-	<h3>connpassページ</h3>
+	<h3>
+		<a href="https://forceoutput.connpass.com/event/339151/" target="_blank">connpassページ</a>
+	</h3>
 	{#await data.blogData}
 		<p>loading...</p>
 	{:then blogRes}
