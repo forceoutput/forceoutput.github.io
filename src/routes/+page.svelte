@@ -111,7 +111,7 @@
 		<ul>
 			{#each blogRes.data as blog}
 				<li>
-					<span>No.{blog.id + 1} </span>
+					<span>No.{blog.id} </span>
 					<a
 						class="text-[#0000ff] underline"
 						href={blog.blogUrl}
