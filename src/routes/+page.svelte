@@ -80,20 +80,22 @@
 		{/if}
 	{/await}
 	<h3>
-		<a
-			class="text-[#0000ff] underline"
-			target="_blank"
-			rel="noopener noreferer"
-			href="https://x.com/hashtag/%E5%8A%9B%E5%BC%B7%E3%81%8F%E3%82%A2%E3%82%A6%E3%83%88%E3%83%97%E3%83%83%E3%83%88%E3%81%99%E3%82%8B%E6%97%A5"
-			>#力強くブログを108記事アウトプットする日</a
-		>
+		<font color="blue">
+			<a
+				class="underline"
+				target="_blank"
+				rel="noopener noreferer"
+				href="https://x.com/hashtag/%E5%8A%9B%E5%BC%B7%E3%81%8F%E3%82%A2%E3%82%A6%E3%83%88%E3%83%97%E3%83%83%E3%83%88%E3%81%99%E3%82%8B%E6%97%A5"
+				>#力強くブログを108記事アウトプットする日</a
+			>
+		</font>
 	</h3>
 	<h3>
-		<a
-			href="https://forceoutput.connpass.com/event/339151/"
-			class="text-[#0000ff] underline"
-			target="_blank">connpass</a
-		>
+		<font color="blue">
+			<a href="https://forceoutput.connpass.com/event/339151/" class="underline" target="_blank"
+				>connpass</a
+			>
+		</font>
 	</h3>
 	<div>
 		<font color="red">
@@ -112,19 +114,17 @@
 			{#each blogRes.data as blog}
 				<li>
 					<span>No.{blog.id} </span>
-					<a
-						class="text-[#0000ff] underline"
-						href={blog.blogUrl}
-						target="_blank"
-						rel="noopener noreferrer">{blog.blogTitle}</a
-					>
+					<font color="blue">
+						<a class="underline" href={blog.blogUrl} target="_blank" rel="noopener noreferrer"
+							>{blog.blogTitle}</a
+						>
+					</font>
 					<span>by</span>
-					<a
-						class="text-[#0000ff] underline"
-						href={blog.profileUrl}
-						target="_blank"
-						rel="noopener noreferrer">{blog.name}</a
-					>
+					<font color="blue">
+						<a class="underline" href={blog.profileUrl} target="_blank" rel="noopener noreferrer"
+							>{blog.name}</a
+						>
+					</font>
 				</li>
 			{/each}
 		</ul>
