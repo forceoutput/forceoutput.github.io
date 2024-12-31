@@ -42,11 +42,11 @@
 		{#await countPromises}
 			<span>...</span>
 		{:then count}
-			<span>{count.blogCount}</span>
+			<span>{count.blogCount}記事</span>
 			+
-			<span>{count.releaseCount}</span>
+			<span>{count.releaseCount}リリース</span>
 		{/await}
-		/ 108
+		/ 108アウトプット
 	</h2>
 	{#await countPromises then count}
 		{#if count.blogCount + count.releaseCount >= 108}
