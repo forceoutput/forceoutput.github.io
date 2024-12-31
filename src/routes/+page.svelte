@@ -1,8 +1,11 @@
-<script>
+<script lang="ts">
 	/** @type {import('./$types').PageData} */
 	export let data;
 
-	const count = data.blogData.then((res) => res.data.length);
+	const countPromises = data.responseData.then((res) => ({
+		blogCount: res.data.length,
+		releaseCount: res.release.length
+	}));
 </script>
 
 <svelte:head>
@@ -36,15 +39,17 @@
 	</blockquote>
 	<h1>力強くブログを108記事アウトプットする日</h1>
 	<h2>
-		{#await count}
+		{#await countPromises}
 			<span>...</span>
 		{:then count}
-			<span>{count}</span>
+			<span>{count.blogCount}</span>
+			+
+			<span>{count.releaseCount}</span>
 		{/await}
 		/ 108
 	</h2>
-	{#await count then count}
-		{#if count >= 108}
+	{#await countPromises then count}
+		{#if count.blogCount + count.releaseCount >= 108}
 			<!-- 久しぶりだね. font タグだよ. 後方互換性に感謝 -->
 			<marquee
 				><font size="7"
@@ -107,26 +112,51 @@
 			>
 		</font>
 	</div>
-	{#await data.blogData}
+	{#await data.responseData}
 		<p>loading...</p>
-	{:then blogRes}
-		<ul>
-			{#each blogRes.data as blog}
-				<li>
-					<span>No.{blog.id} </span>
-					<font color="blue">
-						<a class="underline" href={blog.blogUrl} target="_blank" rel="noopener noreferrer"
-							>{blog.blogTitle}</a
-						>
-					</font>
-					<span>by</span>
-					<font color="blue">
-						<a class="underline" href={blog.profileUrl} target="_blank" rel="noopener noreferrer"
-							>{blog.name}</a
-						>
-					</font>
-				</li>
-			{/each}
-		</ul>
+	{:then res}
+		<section class="w-full">
+			<h1>リリース</h1>
+			<ul>
+				{#each res.release as rel}
+					<li>
+						<span>No.{rel.id} </span>
+						<font color="blue">
+							<a class="underline" href={rel.releaseUrl} target="_blank" rel="noopener noreferrer"
+								>{rel.releaseTitle}</a
+							>
+						</font>
+						<span>by</span>
+						<font color="blue">
+							<a class="underline" href={rel.profileUrl} target="_blank" rel="noopener noreferrer"
+								>{rel.name}</a
+							>
+						</font>
+					</li>
+				{/each}
+			</ul>
+		</section>
+		<hr />
+		<section class="w-full">
+			<h1>記事</h1>
+			<ul>
+				{#each res.data as blog}
+					<li>
+						<span>No.{blog.id} </span>
+						<font color="blue">
+							<a class="underline" href={blog.blogUrl} target="_blank" rel="noopener noreferrer"
+								>{blog.blogTitle}</a
+							>
+						</font>
+						<span>by</span>
+						<font color="blue">
+							<a class="underline" href={blog.profileUrl} target="_blank" rel="noopener noreferrer"
+								>{blog.name}</a
+							>
+						</font>
+					</li>
+				{/each}
+			</ul>
+		</section>
 	{/await}
 </main>

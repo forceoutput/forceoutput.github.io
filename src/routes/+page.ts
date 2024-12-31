@@ -3,7 +3,7 @@ import { error } from '@sveltejs/kit';
 /** @type {import('./$types').PageLoad} */
 export async function load() {
 	const res = await fetch(
-		'https://script.google.com/macros/s/AKfycbxwRjP-igPQeNIrTf2jenKcBp7MAl4Z_F_J7S6MQN9gJ2MX-2kJj4UEwC3AKYvxBSb1/exec'
+		'https://script.google.com/macros/s/AKfycbxf002I0leN8oUMiKt8TGTZzGtmQmbQLoaTr5-CCRcZA_ngq0VINFjyydrpe0AC6Ave/exec'
 	);
 
 	if (!res.ok) {
@@ -19,9 +19,16 @@ export async function load() {
 			blogTitle: string;
 			blogUrl: string;
 		}[];
+		release: {
+			id: number;
+			name: string;
+			profileUrl: string;
+			releaseTitle: string;
+			releaseUrl: string;
+		}[];
 	}>;
 
 	return {
-		blogData: promise
+		responseData: promise
 	};
 }
