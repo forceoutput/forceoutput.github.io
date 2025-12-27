@@ -9,7 +9,7 @@
 </script>
 
 <svelte:head>
-	<title>力強くブログを108記事アウトプットする日 in 2025</title>
+	<title>力強くブログを108記事アウトプットする日</title>
 	<meta
 		name="description"
 		content="'さもなくばイメージ画像のように「あとはやるだけ」のものが複雑に絡み合って足枷になるぞ．—— tomio2480'"
@@ -37,7 +37,7 @@
 		'さもなくばイメージ画像のように「あとはやるだけ」のものが複雑に絡み合って足枷になるぞ'
 		<cite>-- tomio2480</cite>
 	</blockquote>
-	<h1>力強くブログを108記事アウトプットする日 in 2025</h1>
+	<h1>力強くブログを108記事アウトプットする日</h1>
 	<h2>
 		{#await countPromises}
 			<span>...</span>
@@ -97,7 +97,7 @@
 	</h3>
 	<h3>
 		<font color="blue">
-			<a href="https://forceoutput.connpass.com/event/372351/" class="underline" target="_blank"
+			<a href="https://forceoutput.connpass.com/event/339151/" class="underline" target="_blank"
 				>connpass</a
 			>
 		</font>
@@ -118,25 +118,6 @@
 		<section class="w-full">
 			<h1>リリース</h1>
 			<ul>
-				{#if res.release.length === 0}
-					<li>まだリリースはありません。</li>
-				{/if}
-				{#each res.release as rel}
-					<li>
-						<span>No.{rel.id} </span>
-						<font color="blue">
-							<a class="underline" href={rel.releaseUrl} target="_blank" rel="noopener noreferrer"
-								>{rel.releaseTitle}</a
-							>
-						</font>
-						<span>by</span>
-						<font color="blue">
-							<a class="underline" href={rel.profileUrl} target="_blank" rel="noopener noreferrer"
-								>{rel.name}</a
-							>
-						</font>
-					</li>
-				{/each}
 				{#each res.release as rel}
 					<li>
 						<span>No.{rel.id} </span>
@@ -159,9 +140,6 @@
 		<section class="w-full">
 			<h1>記事</h1>
 			<ul>
-				{#if res.data.length === 0}
-					<li>まだアウトプットがありません.</li>
-				{/if}
 				{#each res.data as blog}
 					<li>
 						<span>No.{blog.id} </span>

@@ -3,7 +3,7 @@ import { error } from '@sveltejs/kit';
 /** @type {import('./$types').PageLoad} */
 export async function load() {
 	const res = await fetch(
-		'https://script.google.com/macros/s/AKfycbxNRATCtYRCcPlNcmbVUTGlseMdWJ28elkxhX2fuatAwra3Vjar9lSN8K3hkEr8d3bQ/exec'
+		'https://script.google.com/macros/s/AKfycbxf002I0leN8oUMiKt8TGTZzGtmQmbQLoaTr5-CCRcZA_ngq0VINFjyydrpe0AC6Ave/exec'
 	);
 
 	if (!res.ok) {
