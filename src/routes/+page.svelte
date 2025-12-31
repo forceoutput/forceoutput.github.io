@@ -49,9 +49,10 @@
 		/ 108アウトプット
 	</h2>
 	{#await countPromises then count}
-		{#if count.blogCount + count.releaseCount >= 108}
-			<!-- 久しぶりだね. font タグだよ. 後方互換性に感謝 -->
-			<marquee
+		{#if count.blogCount + count.releaseCount >= 108 || new Date() >= new Date('2025-12-31T23:59:59+09:00')}
+			<!-- 久しぶりだね. font タグだよ. 後方互換性に感謝 -->	
+			<div style="width: 100%; opacity: ${(count.blogCount + count.releaseCount) / 108};">
+				<marquee
 				><font size="7"
 					><font color="#ff0000">煩</font><font color="#ff1900">悩</font><font color="#ff3200"
 						>撃</font
@@ -82,6 +83,7 @@
 					></font
 				></marquee
 			>
+			</div>
 		{/if}
 	{/await}
 	<h3>

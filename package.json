@@ -1,6 +1,6 @@
 {
 	"name": "forceouput.github.io",
-	"version": "2025.2",
+	"version": "2025.3",
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
